@@ -420,7 +420,6 @@ onMounted(() => {
   setTimeout(() => {
     if (data) {
       isLoaded.value = true;
-      console.log(`mounted finished`);
     }
   }, 1000);
 });
