@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --ui-container: 90rem;
+  --grey-text: #929292;
+}
+
+/* Глобальные стили для цветовых режимов */
+.light [class*="border"] {
+  border-color: var(--tw-ring-color);
+}
+
+.dark [class*="border"] {
+  border-color: var(--tw-ring-color);
+}
+
+.sepia [class*="border"] {
+  border-color: var(--tw-ring-color);
+}
+
+/* transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s ease;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.2s ease;
+}
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(100%);
+}
+
+.slow-fade-enter-active,
+.slow-fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.slow-fade-enter-from,
+.slow-fade-leave-to {
+  opacity: 0;
+}
